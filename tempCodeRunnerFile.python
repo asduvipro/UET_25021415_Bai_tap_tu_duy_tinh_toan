@@ -1,2 +1,11 @@
-a,b = map(int, input().split())
-print(type(a), type(b))
+a = 12
+b = 13
+def hello(a,b):
+    a = a*3
+    b = b*4
+    return a
+print(hello(a,b))
+print(a,b)
+global print
+print = 32
+print(print)
